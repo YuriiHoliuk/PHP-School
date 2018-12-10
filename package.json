@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docker run --rm -v $(pwd):/app -w /app php:cli php"
+    "start": "docker run -v $(pwd):/app -w /app -it --name php php:cli bash"
   },
   "author": "",
   "license": "ISC"
